@@ -1,0 +1,38 @@
+@import "cores.scss";
+@import "resets.scss";
+
+body {
+  height: 100vh;
+  background-color: $verde;
+
+  display: flex;
+  flex-direction: column;
+
+  font-family: Arial, sans-serif;
+  color: rgb(54, 54, 54);
+  gap: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.cabecalho {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+  nav {
+    display: flex;
+    gap: 5px;
+
+    a {
+      text-decoration: none;
+      background-color: $roxo;
+      padding: 10px 20px;
+      color: white;
+      border-radius: 5px;
+    }
+  }
+}

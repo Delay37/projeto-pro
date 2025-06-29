@@ -1,11 +1,47 @@
 <!doctype html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projeto Pro</title>
-  </head>
-  <body>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto PRO</title>
+</head>
+
+<body>
+
+  <header class="cabecalho">
+    <h1>Página do Cliente</h1>
+    <nav class="cabecalho__menu">
+      <a href="index.html">Lista</a>
+      <a href="cadastro.html">Gerência</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="caixa-listagem">
+      <header class="caixa-listagem__cabecalho">
+        <h2>Lista de Livros</h2>
+        <input id="inputBusca" placeholder="Buscar" type="text">
+      </header>
+      <div class="caixa-listagem__principal">
+        <table id="tabelaLivros" border="2">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Título</th>
+              <th>Descrição</th>
+            </tr>
+          </thead>
+          <tbody id="tabelaLivros__tbody">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>
